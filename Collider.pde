@@ -1,9 +1,17 @@
 abstract class Collider extends Component {
+<<<<<<< HEAD
   public boolean isTrigger, useGravity, moveable, passThroughLeft, passThroughRight, passThroughTop, passThroughBottom;
   public float mass;
   public abstract PShape GetBounds();
   float x, y, radius;
   PVector min, max, center;
+=======
+  public boolean isTrigger, useGravity, moveable;
+  public float mass;
+  public abstract PShape GetBounds();
+  float x, y, centerX, centerY, radius;
+  PVector min, max;
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   
   public boolean Collision(Collider c) {
     float d1x = c.min.x - this.max.x;
@@ -33,6 +41,7 @@ abstract class Collider extends Component {
     }
     return support;
   }
+<<<<<<< HEAD
   
   public void Init() {
     super.Init();
@@ -53,4 +62,6 @@ abstract class Collider extends Component {
     max.set(min.x+width, min.y+width);
     center.set((min.x+max.x)/2, (min.y+max.y)/2);
   }
+=======
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
 }

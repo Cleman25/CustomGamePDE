@@ -1,11 +1,16 @@
 public static class PlayerControlManager {
+<<<<<<< HEAD
   protected static final PlayerControlManager instance = new PlayerControlManager();
   protected ArrayList<PlayerControl> controls = new ArrayList<PlayerControl>();
+=======
+  private static final PlayerControlManager instance = new PlayerControlManager();
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   public static PlayerControlManager Instance() {
     return instance;
   }
   
   void Init() {
+<<<<<<< HEAD
     println("Initializing " + this.getClass().getSimpleName());
     LoadControls();
   }
@@ -87,6 +92,11 @@ public static class PlayerControlManager {
   public void ReloadControls(Scene scene) {
     UnloadControls();
     LoadControls(scene);
+=======
+  }
+  
+  void Update() {
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   }
   
 }

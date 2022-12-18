@@ -1,4 +1,5 @@
 public class Collision extends Component {
+<<<<<<< HEAD
   public ArrayList<Collider> collisions = new ArrayList<Collider>();
   public Collision() {
   }
@@ -73,5 +74,13 @@ public class Collision extends Component {
     float radius = mycld.radius + mycld.radius;
     float radiusSq = radius * radius;
     return centerDistanceSq <= radiusSq;
+=======
+  public ArrayList<Collision> collisions = new ArrayList<Collision>();
+  public Collision() {
+  }
+  
+  public Detect(Collision c) {
+  
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   }
 }

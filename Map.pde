@@ -13,7 +13,11 @@ public class Map {
     this.platforms = platforms;
   }
   
+<<<<<<< HEAD
   public void Init() {
+=======
+  public Init() {
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   }
   
   public void Generate(PVector size) {

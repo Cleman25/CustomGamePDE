@@ -1,12 +1,16 @@
 public class Scene {
   String name;
   int index = 0;
+<<<<<<< HEAD
   public ArrayList<SceneLayer> sceneLayers = new ArrayList<SceneLayer>();
+=======
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   private ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();
   private ArrayList<Component> components = new ArrayList<Component>();
   private Map levelMap;
   public Scene(String sc_name) {
     this.name = sc_name;
+<<<<<<< HEAD
     sceneLayers.add(new SceneLayer(Layer.Nothing, "Nothing", 0));
     sceneLayers.add(new SceneLayer(Layer.Background, "Background", 1));
     sceneLayers.add(new SceneLayer(Layer.Center, "center", 2));
@@ -42,11 +46,21 @@ public class Scene {
         }
       }
     }
+=======
+  }
+  
+  public void Init() {
+  }
+  
+  public void Draw() {
+    // Do scene stuff here like you would in a simple draw() method
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   }
   
   public void LoadMap(Map map) {
   }
   
+<<<<<<< HEAD
   public SceneLayer GetLayer(String nm) {
     if(HasLayer(nm)) {
       for (SceneLayer sl: sceneLayers) {
@@ -76,5 +90,7 @@ public class Scene {
     return null;
   }
   
+=======
+>>>>>>> 95f78d881a5aea8163ac29e68dd3323392cdb399
   
 }
