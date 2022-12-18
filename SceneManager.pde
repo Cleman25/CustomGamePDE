@@ -12,6 +12,7 @@ public static class SceneManager {
   void Init() {
     println("Initializing " + this.getClass().getSimpleName());
     // Get gameObjects from Scene
+    currentScene = new Scene("Start");
     for(HashMap.Entry<String, Scene> sc: scenes.entrySet()) {
       sc.getValue().Init();
     }

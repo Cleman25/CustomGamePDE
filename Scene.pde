@@ -32,10 +32,15 @@ public class Scene {
     Collections.sort(sceneLayers);
   }
   
-  public void Draw() {
+  public void Update() {
     // Do scene stuff here like you would in a simple draw() method
-    for(GameObject go: gameObjects) {
-      // load each go in its scene layer
+    for(SceneLayer sl: sceneLayers) {
+      for(GameObject go: gameObjects) {
+        // load each go in its scene layer
+        if(go.layer == sl) {
+          go.Update();
+        }
+      }
     }
   }
   

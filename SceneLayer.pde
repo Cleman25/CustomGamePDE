@@ -2,9 +2,16 @@ public class SceneLayer extends PGraphics implements Comparable<SceneLayer> {
   public Layer layer;
   public int index = 0;
   public String name;
+  public boolean hidden;
   public Scene scene;
+  public color background = color(0,0,0,0);
+  
+  public SceneLayer() {
+    createGraphics(width, height);
+  }
   
   public SceneLayer(String nm, int id) {
+    this();
     this.name = nm;
     this.index = id;
   }
