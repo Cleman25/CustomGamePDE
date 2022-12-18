@@ -1,10 +1,17 @@
 .DS_Store
 applet
+<<<<<<< HEAD
 application.linux-arm64
 application.linux-armv6hf
+=======
+>>>>>>> bf61af3e61ae9703a369621e40e41c2e91ac9010
 application.linux32
 application.linux64
 application.windows32
 application.windows64
+<<<<<<< HEAD
 application.macosx
 out
+=======
+application.macosx
+>>>>>>> bf61af3e61ae9703a369621e40e41c2e91ac9010
